@@ -23,7 +23,8 @@ class SongsController < ApplicationController
   end
 
   def upload 
-    CSV.foreach()
+    raise params.inpsect
+    #CSV.foreach()
   end 
 
   def edit

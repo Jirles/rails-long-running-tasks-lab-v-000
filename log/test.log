@@ -115,3 +115,5 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
 Processing by SongsController#upload as HTML
   Parameters: {"file"=>#<Rack::Test::UploadedFile:0x000000064cf8c8 @content_type="text/csv", @original_filename="songs.csv", @tempfile=#<Tempfile:/tmp/songs.csv20180719-13093-yb4akg>>}
+Completed 500 Internal Server Error in 46464ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  rollback transaction

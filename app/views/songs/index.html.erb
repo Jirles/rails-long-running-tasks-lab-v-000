@@ -1,6 +1,6 @@
 <%= form_for(url: songs_upload_path, method: post) do |f| %>
   <%= f.file_field :csv %><br>
-  <%= submit_tag 'Upload' %><br>
+  <%= f.submit 'Upload' %><br>
 <% end %>
 
 <ul>

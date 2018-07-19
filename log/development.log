@@ -2197,3 +2197,15 @@ Processing by SongsController#index as HTML
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 6]]
   Rendered songs/index.html.erb within layouts/application (145.6ms)
 Completed 200 OK in 152ms (Views: 149.7ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/songs/upload" for 174.109.113.119 at 2018-07-19 01:16:14 +0000
+Cannot render console from 174.109.113.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SongsController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ttMrSaV6H4JbZYYS1ohsWWqorDWr24zfTs+dP31pM174Wr2TstW9PLUdw1DJs9D9RTFhU0HKMd+SFR1u3jN/rw==", "commit"=>"Upload"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+RuntimeError ({"utf8"=>"✓", "authenticity_token"=>"ttMrSaV6H4JbZYYS1ohsWWqorDWr24zfTs+dP31pM174Wr2TstW9PLUdw1DJs9D9RTFhU0HKMd+SFR1u3jN/rw==", "commit"=>"Upload", "controller"=>"songs", "action"=>"upload"}):
+  app/controllers/songs_controller.rb:26:in `upload'
+
+

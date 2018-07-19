@@ -23,7 +23,7 @@ class SongsController < ApplicationController
   end
 
   def upload 
-    CSV.
+    CSV.foreach()
   end 
 
   def edit
@@ -52,7 +52,7 @@ class SongsController < ApplicationController
   private
 
   def song_params
-    params.require(:song).permit(:title, :artist_name)
+    params.require(:song).permit(:title, :artist_name, :songs)
   end
 end
 

@@ -1,5 +1,5 @@
 class SongsController < ApplicationController
-
+  require 'csv'
   def index
     @songs = Song.all
   end
@@ -23,8 +23,7 @@ class SongsController < ApplicationController
   end
 
   def upload 
-    raise params.inspect
-    #CSV.foreach()
+    CSV.foreach(params[:songs].)
   end 
 
   def edit

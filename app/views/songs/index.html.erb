@@ -1,4 +1,4 @@
-<%= form_tag songs_upload_path, multipart: true do %>
+<%= form_for(url: songs_upload_path, multipart: true) do %>
   <%= file_field_tag :song_csv %><br>
   <%= submit_tag 'Upload' %><br>
 <% end %>

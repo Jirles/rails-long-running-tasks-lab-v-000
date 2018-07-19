@@ -23,7 +23,7 @@ class SongsController < ApplicationController
   end
 
   def upload 
-    
+    CSV.
   end 
 
   def edit
